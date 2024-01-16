@@ -75,6 +75,8 @@ buttonSwitchMenu.addEventListener("click", ()=> {
 const daiquiri = document.querySelector(".daiquiri");
 const tequila = document.querySelector(".tequila");
 const margarita = document.querySelector(".margarita");
+const colada = document.querySelector(".colada");
+const manhattan = document.querySelector(".manhattan");
 
 function showMenuImg(menuItem) {
   switch (menuItem) {
@@ -88,13 +90,11 @@ function showMenuImg(menuItem) {
        margarita.classList.toggle("show-img-list");
        textDay.classList.add("martes");
       break;
-    case 3:
-      day = "Promocion Miercoles: ";
-      textDay.classList.add("miercoles");
+    case 'Colada':
+      colada.classList.toggle("show-img-list");
       break;
-    case 4:
-      day = "Promocion Jueves: ";
-      textDay.classList.add("jueves");
+    case 'Manhattan':
+      manhattan.classList.toggle("show-img-list");
       break;
     case 5:
       day = "Promocion de Viernes: ";
@@ -109,6 +109,8 @@ function showMenuImg(menuItem) {
 const daiquiriDescription = document.querySelector(".daiquiri-description");
 const tequilaDescription = document.querySelector(".tequila-description");
 const margaritaDescription = document.querySelector(".margarita-description");
+const coladaDescription = document.querySelector(".colada-description");
+const manhattanDescription = document.querySelector(".manhattan-description");
 
 function showMenuDescription(menuItem) {
   switch (menuItem) {
@@ -122,13 +124,11 @@ function showMenuDescription(menuItem) {
        day = "Promocion Martes: ";
        margaritaDescription.classList.toggle("show-description-list");
       break;
-    case 3:
-      day = "Promocion Miercoles: ";
-      textDay.classList.add("miercoles");
+    case 'Colada':
+      coladaDescription.classList.toggle("show-description-list");
       break;
-    case 4:
-      day = "Promocion Jueves: ";
-      textDay.classList.add("jueves");
+    case 'Manhattan':
+      manhattanDescription.classList.toggle("show-description-list");
       break;
     case 5:
       day = "Promocion de Viernes: ";

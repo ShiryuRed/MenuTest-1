@@ -102,7 +102,6 @@ li {
 }
 .menu-container {
 	background: #110303;
-	height: 800px;
 	margin: 10px;
 	transition: transform .4s;
 	transform: translateY(0);
@@ -159,6 +158,46 @@ li {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*//////////////////////////////////Prices//////////////////////////////////////////*/
 .item-price::after {
 	content: "$0";
 	position: absolute;
@@ -170,39 +209,14 @@ li {
 	content: "$80";
 }.tequila-price::after {
 	content: "$90";
+}.margarita-price::after {
+	content: "$70";
+}.colada-price::after {
+	content: "$110";
+}.manhattan-price::after {
+	content: "$100";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*////////////////////////////////////////////////////////////////////////////*/
 
 
 
