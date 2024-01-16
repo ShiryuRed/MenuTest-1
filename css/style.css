@@ -100,6 +100,21 @@ li {
 .menu-carta-on{
 	transform: scale(1);
 }
+.btn-download-menu {
+	background: #04041C;
+	padding: 10px;
+	margin: auto;
+	width: 60%;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: transform .4s;
+}.btn-download-menu:active {
+	transform: scale(.7);
+}
+
+
 .menu-container {
 	background: #110303;
 	margin: 10px;
