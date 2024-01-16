@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Sen:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+	<script src="https://kit.fontawesome.com/28faa9840b.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="title-container">
+            <div class="img-container">
+                <img src="multimedia/images/logo.jpg" alt="logo">
+            </div>
+            <h1>Menú</h1>
+        </div>
+    </section>
+    <section class="carousel-section">
+        
+			<div class="carousel">
+				<div class="carousel-container">
+					<button aria-label="Anterior" class="carousel-anterior">
+						<
+					</button>
+
+					<div class="carousel-list">
+						<div class="carousel-item">
+							<img src="multimedia/images/logo.jpg" alt="l" class="img-menu-item" loading="lazy">
+							<p class="carousel-text "></p>
+						</div>
+						<div class="carousel-item">
+							<img src="multimedia/images/logo.jpg" alt="l" class="img-menu-item" loading="lazy">
+							<p class="carousel-text "></p>
+						</div>
+						<div class="carousel-item">
+							<img src="multimedia/images/logo.jpg" alt="l" class="img-menu-item" loading="lazy">
+							<p class="carousel-text "></p>
+						</div>
+						<div class="carousel-item">
+							<img src="multimedia/images/logo.jpg" alt="l" class="img-menu-item" loading="lazy">
+							<p class="carousel-text "></p>
+						</div>
+						<div class="carousel-item">
+							<img src="multimedia/images/logo.jpg" alt="l" class="img-menu-item" loading="lazy">
+							<p class="carousel-text "></p>
+						</div>
+						<div class="carousel-item">
+							<img src="multimedia/images/logo.jpg" alt="l" class="img-menu-item" loading="lazy">
+							<p class="carousel-text "></p>
+						</div>
+					</div>
+
+					<button aria-label="Anterior" class="carousel-siguiente">
+						>
+					</button>
+				</div>
+			</div>
+			<div role="tablist" class="carousel-indicadores"></div>
+    </section>
+	<section>
+		<div class="text-changer-container"><p class="text-changer">ola</p></div>
+	</section>
+	<section>
+		<div class="switch-menu"><p class="text-switch">Ver menu como carta</p></div>
+	</section>
+	<section>
+		<div class="menu-carta-container" hidden>
+			<img src="multimedia/images/Menu vertical.png" alt="menu">
+		</div>
+		<div class="menu-container" >
+			<div class="sub-title-menu">
+				<h3>Bar & Cocteles</h3>
+			</div>
+			<ul class="menu-ul bar-&-cocteles">
+				<li class="menu-item">
+					<p>Daiquir<i class="fa-solid fa-eye show-img-menu" onclick="showMenuImg('Daiquiri')"></i><i class="fa-solid fa-circle-info show-description-menu" onclick="showMenuDescription('Daiquiri')"></i><span class="item-price daiquiri-price"></span></p> 
+					<div class="img-menu-list-container">
+						<img src="https://mixthatdrink.com/wp-content/uploads/2020/03/daiquiri-1280x1920.jpg" class="img-menu-list daiquiri" alt="Daiquiri">
+					
+					</div>
+					<div class="description-menu-list-container">
+						<p class="description-menu-list daiquiri-description">Este es un daiquiri sjsj</p>
+					</div>
+				</li> 
+				<li class="menu-item">
+					<p>Tequila Sunshine<i class="fa-solid fa-eye show-img-menu" onclick="showMenuImg('Tequila')"></i><i class="fa-solid fa-circle-info show-description-menu" onclick="showMenuDescription('Tequila')"></i><span class="item-price tequila-price"></span></p>
+					<div class="img-menu-list-container">
+						<img src="https://th.bing.com/th/id/OIP.sAgOWjPRCbGIHDgGT7j1DQAAAA?rs=1&pid=ImgDetMain" class="img-menu-list tequila" alt="tequilaSunshine">
+					</div>
+					<div class="description-menu-list-container">
+						<p class="description-menu-list tequila-description">Este es un tequila </p>
+					</div>
+				</li>
+				<li class="menu-item">
+					<p>Margarita<i class="fa-solid fa-eye show-img-menu" onclick="showMenuImg('Margarita')"></i><i class="fa-solid fa-circle-info show-description-menu" onclick="showMenuDescription('Margarita')"></i><span class="item-price margarita-price"></span></p>
+					<div class="img-menu-list-container">
+						<img src="https://th.bing.com/th/id/OIP.NEmQW8H6ZVOdm7Cr45DfBQHaLH?rs=1&pid=ImgDetMain" class="img-menu-list margarita" alt="Margarita">
+					</div>
+					<div class="description-menu-list-container">
+						<p class="description-menu-list margarita-description">Esto es una margarita</p>
+					</div>
+				</li>
+				<li class="menu-item">Piña Colada</li>
+				<li class="menu-item">Manhattan</li>
+			</ul>
+		</div>
+	</section>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.js"></script>
+	<script src="js/day.js"></script>
+    <script src="js/carousel.js"></script>
+</body>
+</html>

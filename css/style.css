@@ -1,0 +1,274 @@
+body {
+    background-color: #1c1c1c;
+    color: #c0ffff;
+	font-family: 'Sen', sans-serif;
+}
+h1 { 
+    text-align: center;
+}
+.title-container {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    align-items: center;
+}
+.img-container {
+    display: flex;
+    justify-content: center;
+
+    background-color: #04041C;
+    width: 90%;
+}
+.img-container > img  {
+    height: 200px;
+}
+p {
+	font-size: 1.2rem;
+}
+
+/*////////////////////////////////////////////////////////////////////////////*/
+.carousel {
+	position: relative;
+}
+.carousel-container {
+	position: relative;
+	height: 100%;
+}
+.carousel-anterior,
+.carousel-siguiente {
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: none;
+	top: calc(50% - 35px);
+	line-height: 30px;
+	text-align: center;
+	color: #fff;
+	opacity: 20;
+	position: absolute;
+	background: #0008;
+	border-radius: 30%;
+	cursor: pointer;
+}
+.carousel-anterior {
+	z-index: 10;
+	top: 40%;
+}
+.carousel-siguiente {
+	right: 0;
+	top: 40%;
+}
+
+.carousel-list {
+	display: flex;
+	height: 80%;
+}
+.carousel-item {
+	margin: 2px 10px;
+	display: flex;
+	flex-direction: column;
+}
+.carousel-item > img {
+	height: 100%;
+}
+.carousel-text {
+	background: #000a
+}
+/*////////////////////////////////////////////////////////////////////////////*/
+
+.switch-menu { 
+	background: #04041C;
+	padding: 10px;
+	margin: auto;
+	width: 60%;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: transform .4s;
+}.switch-menu:active {
+	transform: scale(.7);
+}
+
+.menu-carta-container {
+	margin: 10px;
+	transition: transform .3s;
+	transform: scale(0);
+}
+.menu-carta-on{
+	transform: scale(1);
+}
+.menu-container {
+	background: #110303;
+	height: 800px;
+	margin: 10px;
+	transition: transform .4s;
+	transform: translateY(0);
+}
+.hide-web-menu {
+	transform: translateY(100%);
+}
+
+
+.sub-title-menu {
+	background-color: #04041C;
+	padding: 20px;
+	outline: 2px solid #c0ffff;
+}
+.menu-ul {
+	display: flex;
+	flex-direction: column;
+}
+.menu-item {
+	padding: 10px 10px 0px 10px;
+} .menu-item > p > i {
+	margin-left: 10px;
+}
+
+.img-menu-list-container {
+	display: flex;
+	justify-content: center;
+}
+.img-menu-list {
+	transition: height .2s;
+	height: 0px;
+}
+.show-img-list {
+	height: 200px;
+}
+.description-menu-list {
+	transition: height .2s;
+	height: 0px;
+	overflow: hidden;
+	margin-top: 8px;
+	margin-left: 20px;
+	background-color: #aaaa;
+	font-size: 1rem;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	padding: 0px 4px;
+}
+
+.show-description-list {
+	height: 25px;
+}
+
+
+
+
+.item-price::after {
+	content: "$0";
+	position: absolute;
+	right: 0;
+	margin-right: 10px;
+	color: red;
+	align-self: flex-end;
+}.daiquiri-price::after {
+	content: "$80";
+}.tequila-price::after {
+	content: "$90";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*////////////////////////////////////////////////////////////////////////////*/
+.text-changer-container {
+	display: flex;
+	justify-content: center;
+	margin: 20px 0;
+}
+
+.text-changer {
+	display: block;
+	font-family: monospace;
+	white-space: nowrap;
+	border-right: 4px solid;
+	font-size: 18px;
+}
+.domingo {
+	animation: typing 2s steps(19),
+	blink .5s infinite step-end alternate;
+	overflow: hidden;
+	width: 19ch;
+}
+.lunes {
+	animation: typing 2s steps(17),
+	blink .5s infinite step-end alternate;
+	overflow: hidden;
+	width: 17ch;
+}
+.martes {
+	animation: typing 2s steps(18),
+	blink .5s infinite step-end alternate;
+	overflow: hidden;
+	width: 18ch;
+}
+.miercoles {
+	animation: typing 2s steps(21),
+	blink .5s infinite step-end alternate;
+	overflow: hidden;
+	width: 21ch;
+}
+.jueves {
+	animation: typing 2s steps(18),
+	blink .5s infinite step-end alternate;
+	overflow: hidden;
+	width: 18ch;
+}
+.viernes {
+	animation: typing 2s steps(22),
+	blink .5s infinite step-end alternate;
+	overflow: hidden;
+	width: 22ch;
+}
+.sabado {
+	animation: typing 2s steps(18),
+	blink .5s infinite step-end alternate;
+	overflow: hidden;
+	width: 18ch;
+}
+
+@keyframes typing {
+	from { width: 0;}
+}
+
+@keyframes blink {
+	50% { border-color: transparent}
+}
+
+/*////////////////////////////////////////////////////////////////////////////*/
