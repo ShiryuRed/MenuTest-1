@@ -44,7 +44,7 @@ const webMenuContainer = document.querySelector(".menu-container");
 
 buttonSwitchMenu.addEventListener("click", ()=> {
   if (menu == true) {
-    textSwitchMenu.textContent = "Ver menu web";
+    textSwitchMenu.textContent = "Ver menú web";
     /*//////// menu carta aparece ///////// */
     webMenuContainer.classList.add("hide-web-menu");
     setTimeout(function(){
@@ -56,7 +56,7 @@ buttonSwitchMenu.addEventListener("click", ()=> {
       webMenuContainer.setAttribute("hidden", "true");
     },200);
   } else {
-    textSwitchMenu.textContent = "Ver menu como carta";
+    textSwitchMenu.textContent = "Ver menú como carta";
     /*//////// menu web aparece ///////// */
     webMenuContainer.removeAttribute("hidden");
     setTimeout(function(){

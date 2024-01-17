@@ -171,9 +171,23 @@ li {
 }
 
 
-
-
-
+.sobre-nosotros {
+	background: #04041C;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.sobre-nosotros > p {
+	text-align: center;
+}
+.sobre-nosotros > i {
+	margin: 10px;
+	font-size: 1.2rem;
+}
+.location-map  {
+	border: 4px solid #fff;
+}
 
 
 
