@@ -44,7 +44,7 @@ const webMenuContainer = document.querySelector(".menu-container");
 
 buttonSwitchMenu.addEventListener("click", ()=> {
   if (menu == true) {
-    textSwitchMenu.textContent = "Ver menu web";
+    textSwitchMenu.textContent = "Ver menú web";
     /*//////// menu carta aparece ///////// */
     webMenuContainer.classList.add("hide-web-menu");
     setTimeout(function(){
@@ -56,7 +56,7 @@ buttonSwitchMenu.addEventListener("click", ()=> {
       webMenuContainer.setAttribute("hidden", "true");
     },200);
   } else {
-    textSwitchMenu.textContent = "Ver menu como carta";
+    textSwitchMenu.textContent = "Ver menú como carta";
     /*//////// menu web aparece ///////// */
     webMenuContainer.removeAttribute("hidden");
     setTimeout(function(){
@@ -70,6 +70,72 @@ buttonSwitchMenu.addEventListener("click", ()=> {
   }
 })
 
-function hola() {
-  alert("ola")
+
+
+const daiquiri = document.querySelector(".daiquiri");
+const tequila = document.querySelector(".tequila");
+const margarita = document.querySelector(".margarita");
+const colada = document.querySelector(".colada");
+const manhattan = document.querySelector(".manhattan");
+
+function showMenuImg(menuItem) {
+  switch (menuItem) {
+    case 'Daiquiri':
+      daiquiri.classList.toggle("show-img-list");
+      break;
+    case 'Tequila':
+      tequila.classList.toggle("show-img-list");
+      break;
+    case 'Margarita':
+       margarita.classList.toggle("show-img-list");
+       textDay.classList.add("martes");
+      break;
+    case 'Colada':
+      colada.classList.toggle("show-img-list");
+      break;
+    case 'Manhattan':
+      manhattan.classList.toggle("show-img-list");
+      break;
+    case 5:
+      day = "Promocion de Viernes: ";
+      textDay.classList.add("viernes");
+      break;
+    case 6:
+      day = "Promocion Sabado: ";
+      textDay.classList.add("sabado");
+  }
+}
+
+const daiquiriDescription = document.querySelector(".daiquiri-description");
+const tequilaDescription = document.querySelector(".tequila-description");
+const margaritaDescription = document.querySelector(".margarita-description");
+const coladaDescription = document.querySelector(".colada-description");
+const manhattanDescription = document.querySelector(".manhattan-description");
+
+function showMenuDescription(menuItem) {
+  switch (menuItem) {
+    case 'Daiquiri':
+      daiquiriDescription.classList.toggle("show-description-list");
+      break;
+    case 'Tequila':
+      tequilaDescription.classList.toggle("show-description-list");
+      break;
+    case 'Margarita':
+       day = "Promocion Martes: ";
+       margaritaDescription.classList.toggle("show-description-list");
+      break;
+    case 'Colada':
+      coladaDescription.classList.toggle("show-description-list");
+      break;
+    case 'Manhattan':
+      manhattanDescription.classList.toggle("show-description-list");
+      break;
+    case 5:
+      day = "Promocion de Viernes: ";
+      textDay.classList.add("viernes");
+      break;
+    case 6:
+      day = "Promocion Sabado: ";
+      textDay.classList.add("sabado");
+  }
 }

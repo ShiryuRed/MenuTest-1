@@ -70,23 +70,176 @@
 		<div class="text-changer-container"><p class="text-changer">ola</p></div>
 	</section>
 	<section>
-		<div class="switch-menu"><p class="text-switch">Ver menu como carta</p></div>
+		<div class="switch-menu"><p class="text-switch">Ver menú como carta</p></div>
 	</section>
 	<section>
 		<div class="menu-carta-container" hidden>
 			<img src="multimedia/images/Menu vertical.png" alt="menu">
+			<div class="btn-download-menu" onclick="downloadPNG()">Descargar Menú carta</div>
 		</div>
 		<div class="menu-container" >
 			<div class="sub-title-menu">
 				<h3>Bar & Cocteles</h3>
 			</div>
-			<ul class="menu-li bar-&-cocteles">
-				<li class="menu-item">Daiquir<i class="fa-solid fa-eye show-img-menu" onclick="hola()"></i></li>
-				<li class="menu-item">Tequila Sunshine</li>
-				<li class="menu-item">Margarita</li>
-				<li class="menu-item">Piña Colada</li>
-				<li class="menu-item">Manhattan</li>
+			<ul class="menu-ul bar-&-cocteles">
+				<li class="menu-item">
+					<p>Daiquir<i class="fa-solid fa-eye show-img-menu" onclick="showMenuImg('Daiquiri')"></i><i class="fa-solid fa-circle-info show-description-menu" onclick="showMenuDescription('Daiquiri')"></i><span class="item-price daiquiri-price"></span></p> 
+					<div class="img-menu-list-container">
+						<img src="https://mixthatdrink.com/wp-content/uploads/2020/03/daiquiri-1280x1920.jpg" class="img-menu-list daiquiri" alt="Daiquiri">
+					
+					</div>
+					<div class="description-menu-list-container">
+						<p class="description-menu-list daiquiri-description">Este es un daiquiri sjsj</p>
+					</div>
+				</li> 
+				<li class="menu-item">
+					<p>Tequila Sunshine<i class="fa-solid fa-eye show-img-menu" onclick="showMenuImg('Tequila')"></i><i class="fa-solid fa-circle-info show-description-menu" onclick="showMenuDescription('Tequila')"></i><span class="item-price tequila-price"></span></p>
+					<div class="img-menu-list-container">
+						<img src="https://th.bing.com/th/id/OIP.sAgOWjPRCbGIHDgGT7j1DQAAAA?rs=1&pid=ImgDetMain" class="img-menu-list tequila" alt="tequilaSunshine">
+					</div>
+					<div class="description-menu-list-container">
+						<p class="description-menu-list tequila-description">Este es un tequila </p>
+					</div>
+				</li>
+				<li class="menu-item">
+					<p>Margarita<i class="fa-solid fa-eye show-img-menu" onclick="showMenuImg('Margarita')"></i><i class="fa-solid fa-circle-info show-description-menu" onclick="showMenuDescription('Margarita')"></i><span class="item-price margarita-price"></span></p>
+					<div class="img-menu-list-container">
+						<img src="https://th.bing.com/th/id/OIP.NEmQW8H6ZVOdm7Cr45DfBQHaLH?rs=1&pid=ImgDetMain" class="img-menu-list margarita" alt="Margarita">
+					</div>
+					<div class="description-menu-list-container">
+						<p class="description-menu-list margarita-description">Esto es una margarita</p>
+					</div>
+				</li>
+				<li class="menu-item">
+					<p>Piña colada<i class="fa-solid fa-eye show-img-menu" onclick="showMenuImg('Colada')"></i><i class="fa-solid fa-circle-info show-description-menu" onclick="showMenuDescription('Colada')"></i><span class="item-price colada-price"></span></p>
+					<div class="img-menu-list-container">
+						<img src="https://th.bing.com/th/id/OIP.WM4Akonphw3CZ970U-HUugAAAA?rs=1&pid=ImgDetMain" class="img-menu-list colada" alt="Piña colada">
+					</div>
+					<div class="description-menu-list-container">
+						<p class="description-menu-list colada-description">Esto es una Piña colada</p>
+					</div>
+				</li>
+				<li class="menu-item">
+					<p>Manhattan<i class="fa-solid fa-eye show-img-menu" onclick="showMenuImg('Manhattan')"></i><i class="fa-solid fa-circle-info show-description-menu" onclick="showMenuDescription('Manhattan')"></i><span class="item-price manhattan-price"></span></p>
+					<div class="img-menu-list-container">
+						<img src="https://www.aspicyperspective.com/wp-content/uploads/2021/04/manhattan-cocktail-recipe-6.jpg" class="img-menu-list manhattan" alt="Manhattan">
+					</div>
+					<div class="description-menu-list-container">
+						<p class="description-menu-list manhattan-description">Esto es un Manhattan</p>
+					</div>
+				</li>
 			</ul>
+			<div class="sub-title-menu">
+				<h3>Vinos</h3>
+			</div>
+			<ul class="menu-ul bar-&-cocteles">
+				<li class="menu-item">
+					<p>Daiquir<i class="fa-solid fa-eye show-img-menu" onclick="showMenuImg('Daiquiri')"></i><i class="fa-solid fa-circle-info show-description-menu" onclick="showMenuDescription('Daiquiri')"></i><span class="item-price daiquiri-price"></span></p> 
+					<div class="img-menu-list-container">
+						<img src="https://mixthatdrink.com/wp-content/uploads/2020/03/daiquiri-1280x1920.jpg" class="img-menu-list daiquiri" alt="Daiquiri">
+					
+					</div>
+					<div class="description-menu-list-container">
+						<p class="description-menu-list daiquiri-description">Este es un daiquiri sjsj</p>
+					</div>
+				</li> 
+				<li class="menu-item">
+					<p>Tequila Sunshine<i class="fa-solid fa-eye show-img-menu" onclick="showMenuImg('Tequila')"></i><i class="fa-solid fa-circle-info show-description-menu" onclick="showMenuDescription('Tequila')"></i><span class="item-price tequila-price"></span></p>
+					<div class="img-menu-list-container">
+						<img src="https://th.bing.com/th/id/OIP.sAgOWjPRCbGIHDgGT7j1DQAAAA?rs=1&pid=ImgDetMain" class="img-menu-list tequila" alt="tequilaSunshine">
+					</div>
+					<div class="description-menu-list-container">
+						<p class="description-menu-list tequila-description">Este es un tequila </p>
+					</div>
+				</li>
+				<li class="menu-item">
+					<p>Margarita<i class="fa-solid fa-eye show-img-menu" onclick="showMenuImg('Margarita')"></i><i class="fa-solid fa-circle-info show-description-menu" onclick="showMenuDescription('Margarita')"></i><span class="item-price margarita-price"></span></p>
+					<div class="img-menu-list-container">
+						<img src="https://th.bing.com/th/id/OIP.NEmQW8H6ZVOdm7Cr45DfBQHaLH?rs=1&pid=ImgDetMain" class="img-menu-list margarita" alt="Margarita">
+					</div>
+					<div class="description-menu-list-container">
+						<p class="description-menu-list margarita-description">Esto es una margarita</p>
+					</div>
+				</li>
+				<li class="menu-item">
+					<p>Piña colada<i class="fa-solid fa-eye show-img-menu" onclick="showMenuImg('Colada')"></i><i class="fa-solid fa-circle-info show-description-menu" onclick="showMenuDescription('Colada')"></i><span class="item-price colada-price"></span></p>
+					<div class="img-menu-list-container">
+						<img src="https://th.bing.com/th/id/OIP.WM4Akonphw3CZ970U-HUugAAAA?rs=1&pid=ImgDetMain" class="img-menu-list colada" alt="Piña colada">
+					</div>
+					<div class="description-menu-list-container">
+						<p class="description-menu-list colada-description">Esto es una Piña colada</p>
+					</div>
+				</li>
+				<li class="menu-item">
+					<p>Manhattan<i class="fa-solid fa-eye show-img-menu" onclick="showMenuImg('Manhattan')"></i><i class="fa-solid fa-circle-info show-description-menu" onclick="showMenuDescription('Manhattan')"></i><span class="item-price manhattan-price"></span></p>
+					<div class="img-menu-list-container">
+						<img src="https://www.aspicyperspective.com/wp-content/uploads/2021/04/manhattan-cocktail-recipe-6.jpg" class="img-menu-list manhattan" alt="Manhattan">
+					</div>
+					<div class="description-menu-list-container">
+						<p class="description-menu-list manhattan-description">Esto es un Manhattan</p>
+					</div>
+				</li>
+			</ul>
+			<div class="sub-title-menu">
+				<h3>Especialidad de la casa</h3>
+			</div>
+			<ul class="menu-ul bar-&-cocteles">
+				<li class="menu-item">
+					<p>Daiquir<i class="fa-solid fa-eye show-img-menu" onclick="showMenuImg('Daiquiri')"></i><i class="fa-solid fa-circle-info show-description-menu" onclick="showMenuDescription('Daiquiri')"></i><span class="item-price daiquiri-price"></span></p> 
+					<div class="img-menu-list-container">
+						<img src="https://mixthatdrink.com/wp-content/uploads/2020/03/daiquiri-1280x1920.jpg" class="img-menu-list daiquiri" alt="Daiquiri">
+					
+					</div>
+					<div class="description-menu-list-container">
+						<p class="description-menu-list daiquiri-description">Este es un daiquiri sjsj</p>
+					</div>
+				</li> 
+				<li class="menu-item">
+					<p>Tequila Sunshine<i class="fa-solid fa-eye show-img-menu" onclick="showMenuImg('Tequila')"></i><i class="fa-solid fa-circle-info show-description-menu" onclick="showMenuDescription('Tequila')"></i><span class="item-price tequila-price"></span></p>
+					<div class="img-menu-list-container">
+						<img src="https://th.bing.com/th/id/OIP.sAgOWjPRCbGIHDgGT7j1DQAAAA?rs=1&pid=ImgDetMain" class="img-menu-list tequila" alt="tequilaSunshine">
+					</div>
+					<div class="description-menu-list-container">
+						<p class="description-menu-list tequila-description">Este es un tequila </p>
+					</div>
+				</li>
+				<li class="menu-item">
+					<p>Margarita<i class="fa-solid fa-eye show-img-menu" onclick="showMenuImg('Margarita')"></i><i class="fa-solid fa-circle-info show-description-menu" onclick="showMenuDescription('Margarita')"></i><span class="item-price margarita-price"></span></p>
+					<div class="img-menu-list-container">
+						<img src="https://th.bing.com/th/id/OIP.NEmQW8H6ZVOdm7Cr45DfBQHaLH?rs=1&pid=ImgDetMain" class="img-menu-list margarita" alt="Margarita">
+					</div>
+					<div class="description-menu-list-container">
+						<p class="description-menu-list margarita-description">Esto es una margarita</p>
+					</div>
+				</li>
+				<li class="menu-item">
+					<p>Piña colada<i class="fa-solid fa-eye show-img-menu" onclick="showMenuImg('Colada')"></i><i class="fa-solid fa-circle-info show-description-menu" onclick="showMenuDescription('Colada')"></i><span class="item-price colada-price"></span></p>
+					<div class="img-menu-list-container">
+						<img src="https://th.bing.com/th/id/OIP.WM4Akonphw3CZ970U-HUugAAAA?rs=1&pid=ImgDetMain" class="img-menu-list colada" alt="Piña colada">
+					</div>
+					<div class="description-menu-list-container">
+						<p class="description-menu-list colada-description">Esto es una Piña colada</p>
+					</div>
+				</li>
+				<li class="menu-item">
+					<p>Manhattan<i class="fa-solid fa-eye show-img-menu" onclick="showMenuImg('Manhattan')"></i><i class="fa-solid fa-circle-info show-description-menu" onclick="showMenuDescription('Manhattan')"></i><span class="item-price manhattan-price"></span></p>
+					<div class="img-menu-list-container">
+						<img src="https://www.aspicyperspective.com/wp-content/uploads/2021/04/manhattan-cocktail-recipe-6.jpg" class="img-menu-list manhattan" alt="Manhattan">
+					</div>
+					<div class="description-menu-list-container">
+						<p class="description-menu-list manhattan-description">Esto es un Manhattan</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section>
+		<div class="sobre-nosotros">
+			<p>Contactanos en</p>
+			<p><i class="fa-brands fa-facebook-f"></i> <a href="#">Facebook</a> </p>
+			<p><i class="fa-brands fa-whatsapp"></i> <a href="#">2441043578</a></p>
+			<p>Nos ubicamos en</p>
+			<div class="location-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43426.30915974027!2d8.525719349999989!3d47.135438499999985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479aab296046e4f3%3A0xa950bf03c7e3ea10!2sZug%2C%20Suiza!5e0!3m2!1ses-419!2smx!4v1705449816072!5m2!1ses-419!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 		</div>
 	</section>
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.js"></script>

@@ -11,3 +11,10 @@ window.addEventListener("load", function(){
         }
     });
 });
+
+function downloadPNG() {
+  var link = document.createElement('a');
+  link.download = 'menú_carta.png';
+  link.href = '../multimedia/images/Menu vertical.png';
+  link.click();
+}

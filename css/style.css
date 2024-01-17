@@ -23,10 +23,11 @@ h1 {
     height: 200px;
 }
 p {
-	text-align: center;
 	font-size: 1.2rem;
 }
-
+li {
+	list-style-type: none;
+}
 /*////////////////////////////////////////////////////////////////////////////*/
 .carousel {
 	position: relative;
@@ -99,9 +100,23 @@ p {
 .menu-carta-on{
 	transform: scale(1);
 }
+.btn-download-menu {
+	background: #04041C;
+	padding: 10px;
+	margin: auto;
+	width: 60%;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: transform .4s;
+}.btn-download-menu:active {
+	transform: scale(.7);
+}
+
+
 .menu-container {
 	background: #110303;
-	height: 800px;
 	margin: 10px;
 	transition: transform .4s;
 	transform: translateY(0);
@@ -116,14 +131,62 @@ p {
 	padding: 20px;
 	outline: 2px solid #c0ffff;
 }
-.menu-li {
-	background-color: red;
+.menu-ul {
 	display: flex;
 	flex-direction: column;
 }
 .menu-item {
-	background-color: blue;
-	padding: 15px;
+	padding: 10px 10px 0px 10px;
+} .menu-item > p > i {
+	margin-left: 10px;
+}
+
+.img-menu-list-container {
+	display: flex;
+	justify-content: center;
+}
+.img-menu-list {
+	transition: height .2s;
+	height: 0px;
+}
+.show-img-list {
+	height: 200px;
+}
+.description-menu-list {
+	transition: height .2s;
+	height: 0px;
+	overflow: hidden;
+	margin-top: 8px;
+	margin-left: 20px;
+	background-color: #aaaa;
+	font-size: 1rem;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	padding: 0px 4px;
+}
+
+.show-description-list {
+	height: 25px;
+}
+
+
+.sobre-nosotros {
+	background: #04041C;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}
+.sobre-nosotros > p {
+	text-align: center;
+}
+a {
+	color: #efe;
+}
+.location-map  {
+	border: 4px solid #fff;
 }
 
 
@@ -162,6 +225,27 @@ p {
 
 
 
+
+/*//////////////////////////////////Prices//////////////////////////////////////////*/
+.item-price::after {
+	content: "$0";
+	position: absolute;
+	right: 0;
+	margin-right: 10px;
+	color: red;
+	align-self: flex-end;
+}.daiquiri-price::after {
+	content: "$80";
+}.tequila-price::after {
+	content: "$90";
+}.margarita-price::after {
+	content: "$70";
+}.colada-price::after {
+	content: "$110";
+}.manhattan-price::after {
+	content: "$100";
+}
+/*////////////////////////////////////////////////////////////////////////////*/
 
 
 
