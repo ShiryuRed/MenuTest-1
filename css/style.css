@@ -28,6 +28,27 @@ p {
 li {
 	list-style-type: none;
 }
+
+.modal-container {
+	background: #0009;
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.img-modal-container {
+	max-width: 65%;
+	transition: transform .4s;
+	transform: scale(0);
+}
+.img-modal-container-on {
+	transform: scale(1);
+}
+
 /*////////////////////////////////////////////////////////////////////////////*/
 .carousel {
 	position: relative;
