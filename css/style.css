@@ -39,6 +39,8 @@ li {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}.close-modal-container {
+	display: none;
 }
 .img-modal-container {
 	max-width: 65%;
